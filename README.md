@@ -4,71 +4,71 @@ A Simulator of a Rubik's Cube (without auto-solving ability) under OpenGL, MFC.
 # Instruction
 Key Bindings:
 
-Enter    Reset
+-Enter    Reset
 
-R    Right clockwise 90 degrees
-U    Up clockwise 90 degrees
-F    Front clockwise 90 degrees
-L    Left clockwise 90 degrees
-D    Down clockwise 90 degrees
-B    Back clockwise 90 degrees
-X    Rotate 90 degrees around the X-axis
-Y    Rotate 90 degrees around the Y-axis
-Z    Rotate 90 degrees around the Z-axis
+-R    Right clockwise 90 degrees
+-U    Up clockwise 90 degrees
+-F    Front clockwise 90 degrees
+-L    Left clockwise 90 degrees
+-D    Down clockwise 90 degrees
+-B    Back clockwise 90 degrees
+-X    Rotate 90 degrees around the X-axis
+-Y    Rotate 90 degrees around the Y-axis
+-Z    Rotate 90 degrees around the Z-axis
 
-Shift + R    Right counterclockwise 90 degrees
-etc.
+-Shift + R    Right counterclockwise 90 degrees
+-etc.
 
-Arrows    Translate the Cube
+-Arrows    Translate the Cube
 
-A    Auto-play from the beginning (after opening a formula file)
+-A    Auto-play from the beginning (after opening a formula file)
 
-E    Stop auto-play (after opening a formula file)
+-E    Stop auto-play (after opening a formula file)
 
 
 ================
 
 Mouse:
 
-Left click on centers    Face counterclockwise 90 degrees
-Right click on centers    Face clockwise 90 degrees
-Drag the left button    Rotate the view
+-Left click on centers    Face counterclockwise 90 degrees
+-Right click on centers    Face clockwise 90 degrees
+-Drag the left button    Rotate the view
 
 
 ================
 
 Side Buttons:
 
-OpenGL
-	Antialiasing
-	Gouraud
-	Lighting    Light on/off & Switch style
+-OpenGL
+	-Antialiasing
+	-Gouraud
+	-Lighting    Light on/off & Switch style
 
-	Vertex    Vertexes only
-	Wireframes    Wireframes only
-	Face    Faces only
+	-Vertex    Vertexes only
+	-Wireframes    Wireframes only
+	-Face    Faces only
 
-Magic Cube
-	Using Textures    Use bitmaps in \res as the pattern on the Cube (customizable, but must keep the same filename)
+-Magic Cube
+	-Using Textures    Use bitmaps in \res as the pattern on the Cube (customizable, but must keep the same filename)
 
-	Centers		Draw Centers
-	Edges		Draw Edges
-	Vertexes		Draw Vertexes
+	-Centers		Draw Centers
+	-Edges		Draw Edges
+	-Vertexes		Draw Vertexes
 
-	Rotation Limit	Limit view to F(Front) +-90 degrees
+	-Rotation Limit	Limit view to F(Front) +-90 degrees
 
-Scaling
-	Link    Lock the scale on 1:1:1
-	X    X-scaling
-	Y    Y-scaling
-	Z    Z-scaling
+-Scaling
+	-Link    Lock the scale on 1:1:1
+	-X    X-scaling
+	-Y    Y-scaling
+	-Z    Z-scaling
 
-Light
-	Rotation
-	Depression
-	Distance
+-Light
+	-Rotation
+	-Depression
+	-Distance
 
-	SpotLight    Switch between point light and spotlight
+	-SpotLight    Switch between point light and spotlight
 
 
 ================
