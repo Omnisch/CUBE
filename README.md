@@ -1,93 +1,75 @@
-# CUBE
+# RUBIK'S CUBE
+
 A Simulator of a Rubik's Cube (without auto-solving ability) under OpenGL, MFC.
 
-# Instruction
-Key Bindings:
+## Instruction
 
-- Enter    Reset
+|Key|Action|
+|-|-|
+|Enter|Reset|
+|R|Right clockwise 90°|
+|U|Up clockwise 90°|
+|F|Front clockwise 90°|
+|L|Left clockwise 90°|
+|D|Down clockwise 90°|
+|B|Back clockwise 90°|
+|X|Rotate 90° around the X-axis|
+|Y|Rotate 90° around the Y-axis|
+|Z|Rotate 90° around the Z-axis|
+|Shift + R|Right counterclockwise 90°|
+|etc.|$ \vdots $|
+|Arrows|Translate the Cube|
+|A|Auto-play from the beginning (after opening a file)|
+|E|Stop auto-play (after opening a file)|
 
-- R&emsp;Right clockwise 90 degrees
-- U&emsp;Up clockwise 90 degrees
-- F&emsp;Front clockwise 90 degrees
-- L&emsp;Left clockwise 90 degrees
-- D&emsp;Down clockwise 90 degrees
-- B&emsp;Back clockwise 90 degrees
-- X&emsp;Rotate 90 degrees around the X-axis
-- Y&emsp;Rotate 90 degrees around the Y-axis
-- Z&emsp;Rotate 90 degrees around the Z-axis
-
-- Shift + R&emsp;Right counterclockwise 90 degrees
-	- etc.
-
-- Arrows&emsp;Translate the Cube
-
-- A&emsp;Auto-play from the beginning (after opening a formula file)
-
-- E&emsp;Stop auto-play (after opening a formula file)
-
----
-
-Mouse:
-
-- Left click on centers&emsp;Face counterclockwise 90 degrees
-- Right click on centers&emsp;Face clockwise 90 degrees
-- Drag the left button&emsp;Rotate the view
-
----
+|Mouse Button|Action|
+|-|-|
+|Left click on centers|Face counterclockwise 90°|
+|Right click on centers|Face clockwise 90°|
+|Drag the left button|Rotate the view|
 
 Side Buttons:
 
 - OpenGL
-	- Antialiasing
-	- Gouraud
-	- Lighting&emsp;Light on/off & Switch style
-
-	- Vertex&emsp;Vertexes only
-	- Wireframes&emsp;Wireframes only
-	- Face&emsp;Faces only
+  - Anti-aliasing
+  - Gouraud
+  - Lighting: Turn lighting on/off & switch style
+  - Vertex: Render vertexes only
+  - Wireframes: Render wireframes only
+  - Face: Render faces only
 
 - Magic Cube
-	- Using Textures&emsp;Use bitmaps in \res as the pattern on the Cube (customizable, but must keep the same filename)
-
-	- Centers&emsp;Draw Centers
-	- Edges&emsp;Draw Edges
-	- Vertexes&emsp;Draw Vertexes
-
-	- Rotation Limit&emsp;Limit view to F(Front) +-90 degrees
+  - Using Textures: Use bitmaps in .\res as the pattern on the cube (customizable, must keep the same filename)
+  - Centers: Draw centers
+  - Edges: Draw edges
+  - Vertexes: Draw vertexes
+  - Rotation Limit: Clamp view rotation into F(Front) ± 90°
 
 - Scaling
-	- Link&emsp;Lock the scale on 1:1:1
-
-	- X&emsp;X-scaling
-	- Y&emsp;Y-scaling
-	- Z&emsp;Z-scaling
+  - Link: Lock the scale on 1:1:1
+  - X: X-scaling
+  - Y: Y-scaling
+  - Z: Z-scaling
 
 - Light
-	- Rotation
-	- Depression
-	- Distance
+  - Rotation
+  - Depression
+  - Distance
+  - Spot Light: Switch between point light and spotlight
 
-	- SpotLight&emsp;Switch between point light and spotlight
+## Auto-play
 
----
+- Click the "Open" button to open and read a formula file, and press A to auto-play. Manual actions are not allowed when auto-playing; press E to quit auto-play.
 
-About Auto-play：
+- The formats can be found in .\res\sample_formula.txt.
+  - Make sure the apostrophes to be dumb and split moves by spaces.
+  - Auto-play will stop at the first unrecognizable character.
 
-Click the "open" button,<br/>
-Open a formula text file, and press A to auto-play.<br/>
-Manual operations are not allowed when auto-playing; press E to quit auto-play.<br/>
+- All recognizable moves (case sensitive):
+  > R R' R2 U U' U2 F F' F2
+  > L L' L2 D D' D2 B B' B2
+  > x x' x2 y y' y2 z z' z2
 
+- M(Middle) and lowercase letter(double layer) moves are not supported for now, please convert them manually.
 
-The formats can be found in \res\sample_formula.txt.<br/>
-The apostrophe needs to be half-width, split steps by spaces.<br/>
-Auto-play will stop when encountering the first unrecognizable character.<br/>
-
-
-All steps that are recognizable:<br/>
-R R' R2 U U' U2 F F' F2<br/>
-L L' L2 D D' D2 B B' B2<br/>
-x x' x2 y y' y2 z z' z2<br/>
-
-
-M(Middle) and lowercase letters(double layer) are not supported for now, please convert manually.<br/>
-Counterclockwise 180 degrees is not supported for now, please convert to clockwise 180 degrees manually.<br/>
+- Counter-clockwise 180° moves are not supported for now, please convert them to clockwise 180° manually.
