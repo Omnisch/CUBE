@@ -1,6 +1,6 @@
 # RUBIK'S CUBE
 
-A Simulator of a Rubik's Cube (without auto-solving ability) under OpenGL, MFC.
+A Simulator of a Rubik's Cube (without self-solving ability) under OpenGL, MFC.
 
 ## Instruction
 
@@ -66,8 +66,8 @@ Side Buttons:
   - Auto-play will stop at the first unrecognizable character.
 
 - All recognizable moves (case sensitive):
-  > R R' R2 U U' U2 F F' F2
-  > L L' L2 D D' D2 B B' B2
+  > R R' R2 U U' U2 F F' F2  
+  > L L' L2 D D' D2 B B' B2  
   > x x' x2 y y' y2 z z' z2
 
 - M(Middle) and lowercase letter(double layer) moves are not supported for now, please convert them manually.
